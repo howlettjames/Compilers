@@ -1,0 +1,19 @@
+Gramática para LL1
+E -> T E';     E' -> + T E' | - T E' | e;   T -> F T';   T' -> * F T' | / F T' | e;   F -> ( E ) | NUM;
+
+Gramática para LL1 dos
+E -> T E';     E' -> + T E' | - T E' | e;    T -> P T';    T' -> * P T' | / P T' | e;    P -> F P';    P' -> ^ F P' | e;    F -> ( E ) | NUM;
+
+Cadenas de prueba:
+2.8 + 7 * (14.2 - 13) ^ 2$
+
+DDSSLLDLSDD.DE+DDSSSDD.DeDD
+
+Gramática para LRs
+E' -> E;     E -> E + T | T;     T -> T * F | F;     F -> ( E ) | NUM;
+
+Para Gramáticas
+/_*&(/+|/-|/*|//|/(|/))*&([/a-/z]|[/A-/Z]|[/0-/9])*&(/+|/*|//|/@|/?|/')*&/_* 10 SYMBOL
+/-&/> 20 FLECHA
+/; 30 PyC
+/| 40 OR

@@ -1,0 +1,24 @@
+<<< JAMES ALGORITHMS >>>
+To build an AFN you can use any of the options included on the Main Menu, I'll explain every option below:
+
+1. Crear AFN Basico
+
+First you need to know that there are only 3 automaton available to build, with these 3 automatons you can build any type of Regular Expression
+or Analyzer, etc.
+
+When you create an AFN you need to specify the character with which the automaton will be build.
+
+2. UNIR
+
+When you join two AFNs you just select them and click the button "OK" ignoring the other 2 text box that appear in the middle.
+
+You use those two text boxes when you join any automaton to the AFN T. The first one is the "token number" selected to that automaton and the 
+second one is the "token string" e.g. "& 10 CONCAT".
+
+6. CONVERTIR A AFD
+
+When you convert a AFN to AFD two thing happen:
+- The AFN is converted to AFD
+- The AFD is sent to a default text file known as "AFD.txt" this is the default AFD text file the program will be reading when
+  selecting the option 7 from the Main Menu.
+
